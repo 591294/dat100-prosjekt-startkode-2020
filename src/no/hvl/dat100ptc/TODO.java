@@ -12,7 +12,7 @@ public class TODO {
 	
 	public static String construtor(String className) {
 				
-	   return "Konstruktøren for klassen " + className + " er ikke implementert";
+	   return "KonstruktÃ¸ren for klassen " + className + " er ikke implementert";
 		
 	}
 
