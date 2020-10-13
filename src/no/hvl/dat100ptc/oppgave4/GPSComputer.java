@@ -1,4 +1,4 @@
-package no.hvl.dat100ptc.oppgave4;
+		package no.hvl.dat100ptc.oppgave4;
 
 import no.hvl.dat100ptc.TODO;
 import no.hvl.dat100ptc.oppgave1.GPSPoint;
@@ -31,11 +31,12 @@ public class GPSComputer {
 
 		double distance = 0;
 
-		// TODO - START
-
-		throw new UnsupportedOperationException(TODO.method());
-
-		// TODO - SLUTT
+		for (int i = 1; i<gpspoints.length; i++) {
+			distance += GPSUtils.distance(gpspoints[i], gpspoints[i-1]);
+			
+		}
+		
+		return distance;
 
 	}
 
@@ -73,26 +74,14 @@ public class GPSComputer {
 	
 	public double maxSpeed() {
 		
-		double maxspeed = 0;
-		
-		// TODO - START
-		
-		throw new UnsupportedOperationException(TODO.method());
-		
-		// TODO - SLUTT
+		return GPSUtils.findMax(speeds());
 		
 	}
 
 	public double averageSpeed() {
 
-		double average = 0;
-		
-		// TODO - START
-		
-		throw new UnsupportedOperationException(TODO.method());
-		
-		// TODO - SLUTT
-		
+		return (totalDistance() / totalTime()) * 3.6;
+
 	}
 
 	/*
@@ -108,46 +97,46 @@ public class GPSComputer {
 	public static double MS = 2.236936;
 
 	// beregn kcal gitt weight og tid der kjøres med en gitt hastighet
-	public double kcal(double weight, int secs, double speed) {
+		public double kcal(double weight, int secs, double speed) {
 
-		double kcal;
+			double kcal;
 
-		// MET: Metabolic equivalent of task angir (kcal x kg-1 x h-1)
-		double met = 0;		
-		double speedmph = speed * MS;
+			// MET: Metabolic equivalent of task angir (kcal x kg-1 x h-1)
+			double met = 0;		
+			double speedmph = speed * MS;
 
-		// TODO - START
+			// TODO - START
+			
+			throw new UnsupportedOperationException(TODO.method());
+
+			// TODO - SLUTT
+			
+		}
+
+		public double totalKcal(double weight) {
+
+			double totalkcal = 0;
+
+			// TODO - START
+			
+			throw new UnsupportedOperationException(TODO.method());
+
+			// TODO - SLUTT
+			
+		}
 		
-		throw new UnsupportedOperationException(TODO.method());
-
-		// TODO - SLUTT
+		private static double WEIGHT = 80.0;
 		
+		public void displayStatistics() {
+
+			System.out.println("==============================================");
+
+			// TODO - START
+
+			throw new UnsupportedOperationException(TODO.method());
+			
+			// TODO - SLUTT
+			
+		}
+
 	}
-
-	public double totalKcal(double weight) {
-
-		double totalkcal = 0;
-
-		// TODO - START
-		
-		throw new UnsupportedOperationException(TODO.method());
-
-		// TODO - SLUTT
-		
-	}
-	
-	private static double WEIGHT = 80.0;
-	
-	public void displayStatistics() {
-
-		System.out.println("==============================================");
-
-		// TODO - START
-
-		throw new UnsupportedOperationException(TODO.method());
-		
-		// TODO - SLUTT
-		
-	}
-
-}
